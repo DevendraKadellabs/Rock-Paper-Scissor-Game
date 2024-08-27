@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 let humanScore = 0;
 let computerScore = 0;
 
@@ -35,10 +28,7 @@ function getHumanChoice() {
     else console.log("Enter the valid choice");
 
 }
-//varialbes for storeing the return values from humanchoice and computer choice function
 
-// let humanChoice = getHumanChoice();
-// let computerChoice = getComputerChoice();
 
 //function for playing one round of game
 
@@ -84,12 +74,10 @@ function playGame() {
     if (humanScore > computerScore) {
         console.log(`you Won by ${humanScore} - ${computerScore}`);
     }
-    else console.log(`you lost by ${humanScore} - ${computerScore}`);
+    else if (computerScore > humanScore) {
+        console.log(`you lost by ${humanScore} - ${computerScore}`);
+    }
+    else console.log("Tie with 1-1");
 }
 
 playGame();
-// console.log(`humanScore = ${humanScore}`);
-// console.log(`computerScore = ${humanScore}`);
-
-
-//challange1: storing the values of scores after playing the game 5 times
